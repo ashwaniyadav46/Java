@@ -1,7 +1,7 @@
    public class jaggedarray{
    
 
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         int [][] jagged= new int [2][]; //if we declare here columns also like new int [2][3] it will create a rectangular array not jagged array
         // rectangular array also means fixed 2D array
         jagged[0]= new int [2];   // taking 2 elements in 0 row and 3 elements in 1 row 
@@ -15,12 +15,15 @@
         jagged[1][1]=40;
         jagged[1][2]=50;
   System.out.println("jagged array");
-  for (int i =0; i<jagged.length; i++){
+    for (int[] row : jagged){
     
-    for(int j=0;j<jagged[i].length;j++){
-        System.out.println(jagged[i][j]);
+    for(int value : row){
+        System.out.println(value);
     }
     System.out.println();
 }
-    }
+
 }
+
+     }
+ 
