@@ -2,7 +2,8 @@
    
 
     public static void main(String[] args) {
-        int [][] jagged= new int [2][3];
+        int [][] jagged= new int [2][]; //if we declare here columns also like new int [2][3] it will create a rectangular array not jagged array
+        // rectangular array also means fixed 2D array
         jagged[0]= new int [2];   // taking 2 elements in 0 row and 3 elements in 1 row 
         jagged[1]=new int[3];
         //assign value
